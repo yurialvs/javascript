@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atv02</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #area{
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            background-color: blueviolet;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Coloque o mouse aqui!
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText='Clicou'
+            a.style.background='red'
+        }
+        
+        function entrar(){
+            a.innerText='Entrou'
+            a.style.background='blue'
+        }
+
+        function sair(){
+            a.innerText='Saiu'
+            a.style.background='green'
+        }
+    </script>
+</body>
+</html>
