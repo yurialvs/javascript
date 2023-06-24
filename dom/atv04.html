@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atv04</title>
+    <style>
+        body{
+            background-color: #141414;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #c5c5c5;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        #multa {
+            color: red;
+        }
+
+        #txtvel{
+            width: 55px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h</p> 
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade: <span id="multa">${txtv.value} Km/h</span></p>`
+            if (vel > 60) {
+                res.innerHTML += `<p><strong>Veículo:</strong> <span id='multa'>UNO</span> adaptado com <span id='multa'>ESCADA TURBO</span></p>
+                <p>Você está <span id= 'multa'>MULTADO</span> por excesso de velocidade.</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
