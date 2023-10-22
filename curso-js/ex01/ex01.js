@@ -5,7 +5,7 @@ console.log(carro);
 
 //2. Crie uma variável para armazenar o preço do bolo, que custa R$ 19,99. E exiba=a.
 
-let precoBolo = 19.99;
+let precoBolo = "R$ " + 19.99;
 console.log(precoBolo);
 
 //3. Corrija o código a seguir (e exiba-o). let "cidade" = São Paulo
