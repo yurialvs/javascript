@@ -1,3 +1,5 @@
+// Cria um return na function
+
 function nomeCompleto(nome, sobrenome) {
     return `${nome} ${sobrenome}`;
 }

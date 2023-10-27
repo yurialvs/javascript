@@ -1,3 +1,5 @@
+// Cria uma function com return condicional
+
 function maiorDeIdade(idade) {
     if(idade >= 18) {
         return true;
