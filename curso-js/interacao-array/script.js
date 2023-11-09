@@ -1,6 +1,6 @@
 let fruits = ["Banana", "Uva", "Laranja", "Limão"];
 
-// Filtra as arrays
+// Filtra as arrays com item com mais de 4 letras
 let bigFruits = fruits.filter((item) => {
     return item.length > 4;
 });
