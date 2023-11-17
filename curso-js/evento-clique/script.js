@@ -12,6 +12,13 @@ function clicou(){
 // Forma alternativa: p.innerHTML += "<p>Texto 789</p>";
     let newText = document.createElement("p");
     newText.innerText = "Texto 789";
+    
+/* Início
+    p.prepend(newText); 
+*/ 
 
+// Final
     p.appendChild(newText);
+
+
 }
