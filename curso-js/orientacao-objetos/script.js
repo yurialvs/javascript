@@ -11,7 +11,9 @@ class Person{
     }
 
     // Actions
-    takeAStep()
+    takeAStep() {
+        
+    }
 }
 
 // Instância
