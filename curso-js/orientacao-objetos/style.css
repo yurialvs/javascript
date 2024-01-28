@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    background: linear-gradient(to top right, #ff8801, #f006c9);
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#conteiner {
+    background: linear-gradient(to top right, #00000000, #00000015, #00000054);
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    border: solid #ffffff2a 1px;
+}
