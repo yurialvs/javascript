@@ -12,7 +12,7 @@ class Person{
 
     // Actions
     takeAStep() {
-        
+        this.steps++;
     }
 }
 
@@ -21,4 +21,5 @@ let p1 = new Person("João", 20);
 let p2 = new Person("Maria", 30);
 let p3 = new Person("Pedro", 40);
 
-console.log(p2.money);
+p1.takeAStep();
+console.log(`Passos de ${p1.name}: ${p1.steps}`);
