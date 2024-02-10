@@ -1,7 +1,4 @@
 class Person{
-    
-    // Variáveis estáticas
-    static hands = 2;
 
     // Variáveis comuns
     age = 0;
@@ -10,14 +7,14 @@ class Person{
     constructor(name){
         this.name = name;
     }
-
-    sayHello(){
-        console.log(`Oi, eu sou ${this.name} e tenho ${Person.hands} mãos.`);
-    }
 }
 
-// Altera variáveis estáticas
-// Person.hands = 10;
+function createPerson(name, age) {
+    let p = new Person(name);
+    p.age = age;
+    return p;
+}
 
-let p1 = new Person("Yuri");
-p1.sayHello();
+let p1 = createPerson("Yuri", 90);
+
+console.log(`${p1.name} tem ${p1.age} anos.`);
