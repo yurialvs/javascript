@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(0, 112, 75);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#box {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    margin: 10px;
+}
+
+input{
+    text-align: center;
+    margin: 10px;
+}
+
+img {
+    width: 150px;
+    padding-top: 15px;
+}
